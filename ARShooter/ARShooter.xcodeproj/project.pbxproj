@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		78806CEA20E36F2100DB17E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806CE920E36F2100DB17E6 /* AppDelegate.swift */; };
-		78806CEC20E36F2100DB17E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806CEB20E36F2100DB17E6 /* ViewController.swift */; };
+		78806CEC20E36F2100DB17E6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806CEB20E36F2100DB17E6 /* GameViewController.swift */; };
 		78806CEF20E36F2100DB17E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78806CED20E36F2100DB17E6 /* Main.storyboard */; };
 		78806CF120E36F2400DB17E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78806CF020E36F2400DB17E6 /* Assets.xcassets */; };
 		78806CF420E36F2400DB17E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78806CF220E36F2400DB17E6 /* LaunchScreen.storyboard */; };
+		78806D0F20E3987900DB17E6 /* MobNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806D0E20E3987900DB17E6 /* MobNode.swift */; };
+		78806D1120E3997000DB17E6 /* CollisionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806D1020E3997000DB17E6 /* CollisionCategory.swift */; };
+		78806D1320E39A9600DB17E6 /* BulletNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806D1220E39A9600DB17E6 /* BulletNode.swift */; };
+		78806D1520E3BC9E00DB17E6 /* LootNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806D1420E3BC9E00DB17E6 /* LootNode.swift */; };
+		78806D1720E3BFB700DB17E6 /* FloorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78806D1620E3BFB700DB17E6 /* FloorNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		78806CE620E36F2100DB17E6 /* ARShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78806CE920E36F2100DB17E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78806CEB20E36F2100DB17E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78806CEB20E36F2100DB17E6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		78806CEE20E36F2100DB17E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78806CF020E36F2400DB17E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78806CF320E36F2400DB17E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78806CF520E36F2400DB17E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78806D0E20E3987900DB17E6 /* MobNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobNode.swift; sourceTree = "<group>"; };
+		78806D1020E3997000DB17E6 /* CollisionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategory.swift; sourceTree = "<group>"; };
+		78806D1220E39A9600DB17E6 /* BulletNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletNode.swift; sourceTree = "<group>"; };
+		78806D1420E3BC9E00DB17E6 /* LootNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootNode.swift; sourceTree = "<group>"; };
+		78806D1620E3BFB700DB17E6 /* FloorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				78806CFB20E36F8200DB17E6 /* 3D Objects */,
+				78806D0D20E3982300DB17E6 /* Nodes */,
 				78806CE920E36F2100DB17E6 /* AppDelegate.swift */,
-				78806CEB20E36F2100DB17E6 /* ViewController.swift */,
+				78806CEB20E36F2100DB17E6 /* GameViewController.swift */,
 				78806CED20E36F2100DB17E6 /* Main.storyboard */,
 				78806CF020E36F2400DB17E6 /* Assets.xcassets */,
 				78806CF220E36F2400DB17E6 /* LaunchScreen.storyboard */,
 				78806CF520E36F2400DB17E6 /* Info.plist */,
+				78806D1020E3997000DB17E6 /* CollisionCategory.swift */,
 			);
 			path = ARShooter;
 			sourceTree = "<group>";
@@ -70,6 +82,17 @@
 			children = (
 			);
 			path = "3D Objects";
+			sourceTree = "<group>";
+		};
+		78806D0D20E3982300DB17E6 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				78806D0E20E3987900DB17E6 /* MobNode.swift */,
+				78806D1220E39A9600DB17E6 /* BulletNode.swift */,
+				78806D1420E3BC9E00DB17E6 /* LootNode.swift */,
+				78806D1620E3BFB700DB17E6 /* FloorNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78806CEC20E36F2100DB17E6 /* ViewController.swift in Sources */,
+				78806D1120E3997000DB17E6 /* CollisionCategory.swift in Sources */,
+				78806D0F20E3987900DB17E6 /* MobNode.swift in Sources */,
+				78806CEC20E36F2100DB17E6 /* GameViewController.swift in Sources */,
+				78806D1520E3BC9E00DB17E6 /* LootNode.swift in Sources */,
 				78806CEA20E36F2100DB17E6 /* AppDelegate.swift in Sources */,
+				78806D1720E3BFB700DB17E6 /* FloorNode.swift in Sources */,
+				78806D1320E39A9600DB17E6 /* BulletNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = internal.ARShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = internal.ARShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
